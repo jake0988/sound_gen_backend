@@ -19,7 +19,7 @@ class Api::V1::InstrumentsController < ApplicationController
   private
 
   def instrument_params
-    params.require(:instrument).permit(:name, :description, :sound, :image, :tuning_id, :frequency)
+    params.require(:instrument).permit(:name, :description, :sound, :image_url, :tuning_id, :frequency)
   end
 
 end
